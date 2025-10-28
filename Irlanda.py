@@ -19,12 +19,12 @@ def main():
 
             if name in blocked_apps:
                 proc.kill()
-                print(Fore.RED + f"Kapandı: {name}:{pid}")
+                print(Fore.RED + f"Closed: {name}:{pid}")
                 sor = input("Şifreyi gir: ")
                 if sor != PASSWORD:
                     CoderWhatKit.send_message("Write Your Phone Number", "Write Message")
                     time.sleep(6)
-                    pyautogui.press('enter')
+                    pyautogui.press('enter') # Check for send message
                 else:
                     sys.exit(0)
                 return main()
@@ -33,3 +33,4 @@ def main():
 
 
 main()
+
