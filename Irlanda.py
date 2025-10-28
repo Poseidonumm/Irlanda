@@ -8,7 +8,7 @@ import pyautogui
 blocked_apps = ["Discord.exe", "TLauncher.exe"]
 print("-----------------------------------------")
 
-PASSWORD = "Monch-231!"
+PASSWORD = "Your Password"
 
 def main():
     time.sleep(1)
@@ -30,5 +30,6 @@ def main():
                 return main()
             else:
                 continue
+
 
 main()
